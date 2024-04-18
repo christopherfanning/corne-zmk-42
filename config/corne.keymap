@@ -27,28 +27,28 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none          &kp Q  &kp W       &kp E           &kp R             &kp T          &kp Y            &kp U             &kp I         &kp O           &kp P     &none
-&mt LCTRL ESC  &kp A  &mt LALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &lt 12 G       &kp H            &mt LEFT_SHIFT J  &mt LGUI K    &mt LEFT_ALT L  &kp SEMI  &mt LCTRL SINGLE_QUOTE
-&none          &kp Z  &kp X       &kp C           &kp V             &kp B          &kp N            &kp M             &kp COMMA     &kp DOT         &kp FSLH  &none
-                                  &lt 4 ESC       &lt 2 ENTER       &lt 1 SPACE    &lt 3 BACKSPACE  &mt RALT TAB      &lt 5 DELETE
+&kp TAB         &kp Q  &kp W       &kp E           &kp R             &kp T          &kp Y            &kp U             &kp I         &kp O           &kp P     &kp GRAVE
+&mt LCTRL ESC   &kp A  &mt LALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &lt 12 G       &kp H            &mt LEFT_SHIFT J  &mt LGUI K    &mt LEFT_ALT L  &kp SEMI  &mt LCTRL SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp Z  &kp X       &kp C           &kp V             &kp B          &kp N            &kp M             &kp COMMA     &kp DOT         &kp FSLH  &kp LEFT_SHIFT
+                                   &lt 4 ESC       &lt 2 ENTER       &lt 1 SPACE    &lt 3 BACKSPACE  &mt RALT TAB      &lt 5 DELETE
             >;
         };
 
         numpad_linux {
             bindings = <
-&none  &none            &kp LC(W)       &none      &caps_word  &none            &kp LBKT   &kp N7   &kp N8     &kp N9  &kp RBKT  &none
-&none  &mt LCTRL LC(A)  &mt LALT LC(S)  &kp LGUI   &kp LSHFT   &kp ESC          &kp EQUAL  &kp N4   &kp N5     &kp N6  &kp SQT   &none
-&none  &kp LC(Z)        &kp LC(X)       &kp LG(C)  &kp LG(V)   &kp LG(LS(V))    &kp MINUS  &kp N1   &kp N2     &kp N3  &kp BSLH  &none
-                                        &none      &none       &none            &kp N0     &kp DOT  &kp GRAVE
+&trans  &none      &kp LC(W)       &none      &caps_word  &kp LC(T)        &kp LBKT   &kp N7   &kp N8     &kp N9  &kp RBKT  &trans
+&trans  &kp LC(A)  &mt LALT LC(S)  &kp LGUI   &kp LSHFT   &kp ESC          &kp EQUAL  &kp N4   &kp N5     &kp N6  &kp SQT   &kp SPACE
+&trans  &kp LC(Z)  &kp LC(X)       &kp LG(C)  &kp LG(V)   &kp LG(LS(V))    &kp MINUS  &kp N1   &kp N2     &kp N3  &kp BSLH  &kp ENTER
+                                   &none      &none       &trans           &kp N0     &kp DOT  &kp GRAVE
             >;
         };
 
         arrow_linux {
             bindings = <
-&none  &none      &none     &none     &none                 &kp PG_UP        &none     &none     &none   &none      &none  &none
-&none  &kp LCTRL  &kp LALT  &kp LGUI  &mt LEFT_SHIFT LA(F)  &kp BSPC         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &none
-&none  &none      &none     &none     &none                 &kp PAGE_DOWN    &none     &none     &none   &none      &none  &none
-                            &none     &none                 &none            &none     &none     &none
+&trans  &none      &none     &none     &none                 &kp PG_UP        &none     &none     &none   &none      &none  &none
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &mt LEFT_SHIFT LA(F)  &kp BSPC         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &none
+&trans  &none      &none     &none     &none                 &kp PAGE_DOWN    &none     &none     &none   &none      &none  &none
+                             &none     &none                 &none            &none     &none     &none
             >;
         };
 
@@ -79,7 +79,7 @@
         bluetooth {
             bindings = <
 &none  &none         &none         &none         &none         &none           &none  &none   &none   &none  &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &tog 6  &none   &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &tog 6  &to 0   &none  &none  &none
 &none  &bt BT_CLR    &none         &none         &none         &none           &none  &none   &none   &none  &none  &none
                                    &none         &none         &none           &none  &none   &trans
             >;
